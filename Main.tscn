@@ -1,0 +1,30 @@
+[gd_scene format=3]
+
+[node name="Main" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="UI" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+
+[node name="PowerLabel" type="Label" parent="UI"]
+text = "Power: 100%"
+
+[node name="NightLabel" type="Label" parent="UI"]
+text = "Night 1 - 12 AM"
+
+[node name="CamerasButton" type="Button" parent="UI"]
+text = "Cameras"
+
+[node name="DoorButtons" type="HBoxContainer" parent="UI"]
+
+[node name="LeftDoorButton" type="Button" parent="UI/DoorButtons"]
+text = "Left Door"
+
+[node name="RightDoorButton" type="Button" parent="UI/DoorButtons"]
+text = "Right Door"
